@@ -1,8 +1,25 @@
-# React + Vite
+# Tenzies – React Dice Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React game: roll 10 dice and keep "holding" dice until all ten show the same number.
 
-Currently, two official plugins are available:
+![Tenzies screenshot](Capture.PNG)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- Click a die to hold/unhold it, then roll the rest
+- Win detection when all dice are held and equal, with a confetti celebration
+- Tracks the number of rolls and the time taken to win
+- New game reset
+
+## Built with
+
+React 18 (hooks: `useState`, `useEffect`), Vite, react-confetti
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+Built while learning React with the Scrimba "Learn React" course (2024).
